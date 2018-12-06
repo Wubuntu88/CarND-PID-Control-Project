@@ -18,24 +18,24 @@ direction it needs to turn.
 * K_p, K_d, and K_i are coeffients to the 'P', 'D', and 'I' terms that adjust the strength to which 
 each term is multiplied.  For example, a high absolute value of the 'K_p' term will result in high oscillations and oversteering.  A high absolute value of the 'K_d' term will moderate the oversteering.
 
-Here are some examples of the different weights for each term of the PID controller.
+Here are some examples of the different weights for each term of the PID controller.  Video files are zipped in the project submission.
 
 #### low abs(p) abs(d) == 0 - in this case the vehicle slowly oscillates out of control.
-##### P=-0.13_I=0.0_D=0.0
-[alt small_p_small_d](videos/PID_P=-0.13_I=0.0_D=0.0.mov)
+##### Params: P=-0.13, I=0.0, D=0.0
+file: videos/PID_P=-0.13_I=0.0_D=0.0.mov
 
 #### low abs(p) high abs(d) - in this case the vehicle does not strongly converge to the center of the road.  It does, however, stay on the road.
-##### P=-0.13_I=0.0_D=-7.0
-[alt small_p_high_d](videos/PID_P=-0.13_I=0.0_D=-7.0.mov)
+##### Params: P=-0.13, I=0.0, D=-7.0
+file: videos/PID_P=-0.13_I=0.0_D=-7.0.mov
 
 #### high abs(p) high abs(d) - in this case the vehicle will slowly oscillate until the oscillations will get out of control.
-##### P=-3.13_I=0.0_D=-7.0
-[alt high_p_high_d](videos/PID_P=-3.13_I=0.0_D=-7.0.mov)
+##### Params: P=-3.13, I=0.0, D=-7.0
+file: videos/PID_P=-3.13_I=0.0_D=-7.0.mov
 
 
 #### medium abs(p) hight abs(d) - in this case the car has minor oscillations driving straight and handles the curves well.
-##### P=-0.3_I=0.0_D=-7.0
-[alt medium_p_high_d](video/PID_P=-0.3_I=0.0_D=-7.0.mov)
+##### Params: P=-0.3, I=0.0, D=-7.0
+file: video/PID_P=-0.3_I=0.0_D=-7.0.mov
 
 I tuned the parameters manually.  I observed the behavior of the first 3 videos and make changes to the parameters accordingly.  For the first  set of parameters (P=-0.13_I=0.0_D=0.0), I observed that the car quickly oscillated out of control with the derivative term equal to 0.
 
